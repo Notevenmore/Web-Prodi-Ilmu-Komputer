@@ -1,0 +1,261 @@
+/* reset css */
+body {
+    font-family: "Poppins", "sans-serif";
+    margin: 0px;
+    padding: 0px;
+    gap: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+section#content {
+    display: flex;
+    flex-direction: column;
+}
+h1.title {
+    font-size: 28px;
+    font-weight: bold;
+}
+.line {
+    width: 58px;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #ff0202cc;
+}
+section#content-news,
+section#content-event {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-left: 147px;
+    margin-top: 147px;
+    gap: 48px;
+}
+
+section#content-event section#event {
+    display: flex;
+    font-size: 12px;
+    gap: 24px;
+}
+section#content-event section#event .list-event {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    font-size: 12px;
+    background-color: rgb(217, 217, 217, 0.3);
+}
+section#content-event section#event .list-event img {
+    width: 100%;
+    height: 200px;
+}
+section#content-event section#event .list-event .description {
+    margin: 12px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+section#content-event section#event .list-event .description p {
+    color: black;
+}
+section#content-event section#event .list-event a {
+    text-decoration: none;
+    background-color: #005b9e;
+    color: white;
+    width: 173px;
+    height: 37px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: #005b9e;
+    align-self: end;
+    margin-right: 6px;
+    margin-bottom: 24px;
+}
+.decoration {
+    background: url("http://127.0.0.1:8000/img/decoration.png");
+    margin-right: 0;
+    height: 434px;
+}
+section#footer .footer {
+    display: flex;
+    gap: 117px;
+    align-items: center;
+    justify-content: center;
+    background-color: #005b9e1a;
+    width: 100%;
+    height: 393px;
+}
+section#footer .footer .description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+section#footer .footer .description h1 {
+    text-decoration: underline;
+}
+section#footer .footer .description .logo-caption {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+section#footer .copyright {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #005b9e;
+    color: white;
+}
+section#content-news section#news {
+    display: flex;
+    gap: 25px;
+}
+section#content-news section#news .topnews {
+    display: flex;
+    flex-direction: column;
+    width: 552px;
+    gap: 8px;
+}
+section#content-news section#news .topnews .heading {
+    gap: 4px;
+}
+.date {
+    font-size: 12px;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    color: #afafaf;
+}
+section#content-news section#news .topnews img {
+    height: 361px;
+    width: 100%;
+}
+section#content-news section#news .topnews .thenews {
+    font-size: 12px;
+}
+section#content-news section#news .topnews .more {
+    color: #afafaf;
+}
+section#content-news section#news .top-3-news {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: relative;
+}
+section#content-news section#news .top-3-news img {
+    width: 264px;
+    height: 242px;
+}
+section#content-news section#news .top-3-news .berita-1,
+section#content-news section#news .top-3-news .berita-2 {
+    position: relative;
+}
+section#content-news section#news .top-3-news .overlay-berita-1,
+section#content-news section#news .top-3-news .overlay-berita-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background-color: #005b9e;
+    transition: opacity 0.3s ease;
+    display: flex;
+    z-index: 2;
+    opacity: 0;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+section#content-news section#news .top-3-news .overlay-berita-1 .text,
+section#content-news section#news .top-3-news .overlay-berita-2 .text {
+    margin-left: 10px;
+}
+section#content-news section#news .top-3-news .overlay-berita-1 .date,
+section#content-news section#news .top-3-news .overlay-berita-2 .date {
+    margin-right: 10px;
+}
+section#content-news
+    section#news
+    .top-3-news
+    .berita-1:hover
+    .overlay-berita-1 {
+    opacity: 1;
+}
+section#content-news
+    section#news
+    .top-3-news
+    .berita-2:hover
+    .overlay-berita-2 {
+    opacity: 1;
+}
+section#content-news section#news .listnews ul {
+    list-style: none;
+}
+section#content-news section#news .list {
+    display: flex;
+    gap: 4px;
+    width: 240px;
+}
+section#content-news section#news .list .heading {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 4px;
+}
+section#content-partnership {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 286px;
+    gap: 30px;
+}
+section#content-partnership .partnership-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+    width: 100%;
+}
+section#content-videoprofil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6eff5;
+    width: 100%;
+    height: 522px;
+    margin-top: 128px;
+    gap: 48px;
+}
+section#content-videoprofil .description {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+section#content-videoprofil .description button {
+    background-color: #005b9e;
+    color: white;
+    width: 163px;
+    height: 40px;
+    border-radius: 12px;
+    border: inherit;
+}
+section#content-videoprofil .video video {
+    width: 552px;
+    height: 277px;
+}
