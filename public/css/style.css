@@ -1,9 +1,14 @@
 /* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    gap: 0px;
+}
 body {
     font-family: "Poppins", "sans-serif";
     margin: 0px;
     padding: 0px;
-    gap: 0px;
+    width: 100%;
 }
 h1,
 h2,
@@ -43,13 +48,15 @@ section#content-event {
 
 section#content-event section#event {
     display: flex;
+    flex-wrap: wrap;
     font-size: 12px;
     gap: 24px;
 }
 section#content-event section#event .list-event {
     display: flex;
     flex-direction: column;
-    width: 360px;
+    width: 340px;
+    justify-self: center;
     font-size: 12px;
     background-color: rgb(217, 217, 217, 0.3);
 }
@@ -149,16 +156,22 @@ section#content-news section#news .topnews .more {
 }
 section#content-news section#news .top-3-news {
     display: flex;
+    flex-direction: row;
+    gap: 14px;
+    position: relative;
+}
+section#content-news section#news .top-3-news .top-2-news {
+    display: flex;
     flex-direction: column;
     gap: 14px;
     position: relative;
 }
-section#content-news section#news .top-3-news img {
+section section#content-news section#news .top-3-news img {
     width: 264px;
     height: 242px;
 }
-section#content-news section#news .top-3-news .berita-1,
-section#content-news section#news .top-3-news .berita-2 {
+section#content-news section#news .top-3-news .top-2-news .berita-1,
+section#content-news section#news .top-3-news .top-2-news .berita-2 {
     position: relative;
 }
 section#content-news section#news .top-3-news .overlay-berita-1,
@@ -201,13 +214,17 @@ section#content-news
     .overlay-berita-2 {
     opacity: 1;
 }
-section#content-news section#news .listnews ul {
+section#content-news section#news .top-3-news .listnews ul {
     list-style: none;
 }
 section#content-news section#news .list {
     display: flex;
     gap: 4px;
     width: 240px;
+}
+section#content-news section#news .list img {
+    width: 50px !important;
+    height: 50px !important;
 }
 section#content-news section#news .list .heading {
     display: flex;
@@ -240,7 +257,9 @@ section#content-videoprofil {
     width: 100%;
     height: 522px;
     margin-top: 128px;
-    gap: 48px;
+    gap: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 section#content-videoprofil .description {
     gap: 20px;
@@ -258,4 +277,155 @@ section#content-videoprofil .description button {
 section#content-videoprofil .video video {
     width: 552px;
     height: 277px;
+}
+
+/* Responsive */
+@media (max-width: 1276px) {
+    section#content-news section#news {
+        flex-direction: column;
+    }
+}
+@media (max-width: 1160px) {
+    .missing {
+        display: none;
+    }
+    section#content-event section#event,
+    section#content-news section#news {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 1080px) {
+    section#content-videoprofil .description h1 {
+        font-size: 16px;
+    }
+    section#content-videoprofil .description p {
+        font-size: 12px;
+    }
+    section#content-videoprofil .description button {
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+    }
+    section#content-videoprofil .video video {
+        width: 400px;
+        height: 200px;
+    }
+    section#content-videoprofil {
+        height: 300px;
+    }
+}
+@media (max-width: 943px) {
+    section#content-partnership h1 {
+        font-size: 20px;
+    }
+    section#content-partnership .partnership-logo img {
+        width: 200px;
+    }
+}
+@media (max-width: 800px) {
+    section#content-partnership h1 {
+        font-size: 20px;
+    }
+    section#content-partnership .partnership-logo img {
+        width: 150px;
+    }
+}
+@media (max-width: 800px) {
+    section#content-partnership h1 {
+        font-size: 20px;
+    }
+    section#content-partnership .partnership-logo img {
+        width: 100px;
+    }
+}
+@media (max-width: 850px) {
+    section.information {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    section.information .title {
+        width: 100%;
+        text-align: center;
+    }
+    section.information .deskripsi {
+        gap: 40px;
+        justify-content: center;
+    }
+    section#content-news section#news .topnews img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 850px) and (min-width: 551px) {
+    section.alumni h1 {
+        font-size: 24px !important;
+    }
+    section.alumni p {
+        font-size: 11px !important;
+    }
+    section.alumni img {
+        height: 350px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 550px) {
+    section.alumni h1 {
+        font-size: 16px !important;
+    }
+    section.alumni p {
+        font-size: 8px !important;
+    }
+    section.alumni img {
+        height: 350px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 730px) {
+    .rounded-tr-\[150px\] {
+        border-top-left-radius: 70px !important;
+        border-bottom-left-radius: 70px !important;
+        border-top-right-radius: 70px !important;
+    }
+    section .dosen {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    section .dosen .img .background {
+        background-color: #075985;
+        width: 350px;
+        border-top-right-radius: 150px;
+        height: 500px;
+        position: absolute;
+        top: 0;
+        left: 100px;
+    }
+    section .dosen .relative {
+        left: 10px;
+        width: 450px;
+    }
+    section .dosen img {
+        border: 15px solid white;
+        margin-bottom: 30px;
+        border-radius: 15px;
+        box-shadow: -1px 5px 15px #808080;
+    }
+    section#news {
+        flex-wrap: wrap;
+    }
+    section#footer .footer {
+        gap: 50px;
+    }
+    section#footer .footer img {
+        width: 200px;
+        margin-left: 20px;
+    }
+    section#footer .footer .description .caption p {
+        font-size: 12px;
+    }
 }
