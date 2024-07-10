@@ -5,9 +5,9 @@
       </div>
       <div class="px-4 text-lg missing">
           <ul class="flex items-center gap-[2vw]">
-              <li><a href="" class="group hover:text-sky-500">Beranda</a></li>
-              <li><a href="" class="group hover:text-sky-500">Akademik</a></li>
-              <li><a href="" class="group hover:text-sky-500">Fasilitas</a></li>
+              <li><a href="{{ route('main.index') }}" class="group hover:text-sky-500">Beranda</a></li>
+              <li><a href="{{ route('main.akademik') }}" class="group hover:text-sky-500">Akademik</a></li>
+              <li><a href="{{ route('main.fasilitas') }}" class="group hover:text-sky-500">Fasilitas</a></li>
               <li><a href="" class="group hover:text-sky-500">Agenda & Berita</a></li>
               <li><a href="" class="group hover:text-sky-500">Kontak</a></li>
           </ul>

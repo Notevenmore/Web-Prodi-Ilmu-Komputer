@@ -1,4 +1,4 @@
-@extends('app')
+@extends('layouts.app')
 @section('content')
 {{--  Section Hero  --}}
 <section class="w-full">
