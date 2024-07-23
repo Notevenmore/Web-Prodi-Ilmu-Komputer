@@ -40,28 +40,30 @@ section#content-news,
 section#content-event {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 80vw;
     padding-left: 147px;
     margin-top: 147px;
     gap: 48px;
 }
 
 section#content-event section#event {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;*/
+    flex-wrap: wrap; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     font-size: 12px;
     gap: 24px;
 }
 section#content-event section#event .list-event {
     display: flex;
     flex-direction: column;
-    width: 340px;
+    width: 22vw;
     justify-self: center;
     font-size: 12px;
     background-color: rgb(217, 217, 217, 0.3);
 }
 section#content-event section#event .list-event img {
-    width: 100%;
+    width: 100vw;
     height: 200px;
 }
 section#content-event section#event .list-event .description {
@@ -77,15 +79,15 @@ section#content-event section#event .list-event a {
     text-decoration: none;
     background-color: #005b9e;
     color: white;
-    width: 173px;
-    height: 37px;
+    width: 15vw;
+    height: 5vh;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-color: #005b9e;
     align-self: end;
-    margin-right: 6px;
+    margin-right: 10px;
     margin-bottom: 24px;
 }
 .decoration {
@@ -127,11 +129,12 @@ section#footer .copyright {
 section#content-news section#news {
     display: flex;
     gap: 25px;
+    align-items: center;
 }
 section#content-news section#news .topnews {
     display: flex;
     flex-direction: column;
-    width: 552px;
+    width: 40vw;
     gap: 8px;
 }
 section#content-news section#news .topnews .heading {
@@ -146,10 +149,11 @@ section#content-news section#news .topnews .heading {
 }
 section#content-news section#news .topnews img {
     height: 361px;
-    width: 100%;
+    width: 100vw;
 }
 section#content-news section#news .topnews .thenews {
     font-size: 12px;
+    fopn
 }
 section#content-news section#news .topnews .more {
     color: #afafaf;
@@ -167,8 +171,9 @@ section#content-news section#news .top-3-news .top-2-news {
     position: relative;
 }
 section section#content-news section#news .top-3-news img {
-    width: 264px;
-    height: 242px;
+    /* width: 264px; */
+    width: 17vw;
+    height: 33vh;
 }
 section#content-news section#news .top-3-news .top-2-news .berita-1,
 section#content-news section#news .top-3-news .top-2-news .berita-2 {
@@ -222,9 +227,13 @@ section#content-news section#news .list {
     gap: 4px;
     width: 240px;
 }
-section#content-news section#news .list img {
+section#content-news section#news .list img.index{
     width: 50px !important;
     height: 50px !important;
+}
+section#content-news section#news .list img.menu{
+    width: 120px !important;
+    height: 100px !important;
 }
 section#content-news section#news .list .heading {
     display: flex;
@@ -379,7 +388,119 @@ section#fasilitas .list-fasilitas img:nth-child(7) {
 section#fasilitas .list-fasilitas img:nth-child(8) {
     grid-area: child8;
 }
+section#berita-utama .image {
+    width: 100vw;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+section#berita-utama section#news .topnews .image {
+    width: 44.5em;
+    height: 300px;
+    position: relative;
+}
+section#berita-utama .image .title-container {
+    position: absolute;
+    bottom: 1.5em;
+    left: 9.1em;
+}
+section#berita-utama section#news .topnews .image .title-container {
+    position: absolute;
+    bottom: 20px;
+    left: 24px;
+}
+section#berita-utama .image .title-container h1.title{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+section#berita-utama .image .title-container .line{
+    width: 155px;
+}
+section#berita-utama section#content-news {
+    margin-top: 100px !important;
+}
+section#berita-utama section#content-news section#news .topnews .list-berita {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+section#berita-utama section#content-news section#news .topnews .list-berita .item-berita {
+    width: 21.5em;
+    background-color: #d9d9d9;
+}
+section#berita-utama section#content-news section#news .topnews .list-berita .item-berita img{
+    width: 100vw;
+    height: 25vh;
+}
+section#berita-utama section#content-news section#news .top-3-news .listnews form {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 12px;
+    width: 362px;
+    height: 48px;
+    margin-bottom: 32px;
 
+}
+section#berita-utama section#content-news section#news .top-3-news .listnews form input {    
+    padding: 12px;
+    border: none !important;
+    outline: none;
+    width: 290px;
+    margin-left: 10px;
+}
+section#berita-utama section#content-news section#news .top-3-news .listnews form input:focus {
+    outline: none;
+}
+section#berita-utama section#content-news section#news .topnews .list-berita .item-berita .content{
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+section#berita-utama section#content-news section#news .topnews .list-berita .item-berita .content h1{
+    font-weight: 600;
+    font-size: 20px;
+}
+section#berita-utama section#content-news section#news .topnews .list-berita .item-berita .content p{
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+section#berita-utama section#content-news section#news .topnews .list-berita .item-berita .content a,
+section#berita-utama .event-column-list .list .description a{
+    background-color: #005b9e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 12px;
+    font-size: 12px;
+}
+.event-column-list {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    margin-bottom: 72px;
+}
+.event-column-list .list {
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    gap: 53px;
+}
+section#berita-utama .event-column-list .list .description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+section#berita-utama .event-column-list .list img {
+    width: 20vw;
+    height: 20vh;
+}
 /* Responsive */
 @media (max-width: 1276px) {
     section#content-news section#news {
@@ -457,6 +578,14 @@ section#fasilitas .list-fasilitas img:nth-child(8) {
     }
     section#content-news section#news .topnews img {
         width: 400px;
+    }
+    section#content-event section#event .list-event {
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+        justify-self: center;
+        font-size: 10px;
+        background-color: rgb(217, 217, 217, 0.3);
     }
 }
 
