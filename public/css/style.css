@@ -40,6 +40,35 @@ ul {
 .bg-dosen-pict img {
     border-radius: 24px;
 }
+.bg-dosen-link {
+    width: 153px;
+    height: 83px;
+    border-radius: 24px 0px 12px 0px;
+    background: linear-gradient(90.23deg, rgba(237, 28, 36, 0.82) 3.51%, rgba(255, 91, 96, 0.82) 106.41%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.bg-dosen-link p.text-2xl {
+    color: #FFBEBE;
+    font-weight: 700;
+}
+.bg-dosen-link div {
+    background-color: #FFBEBE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-dosen-link div p {
+    background: linear-gradient(90.23deg, rgba(237, 28, 36, 0.82) 3.51%, rgba(255, 91, 96, 0.82) 106.41%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    text-fill-color: transparent;
+}
 .peminatan .list-peminatan {
     display: grid;
     grid-template-columns: repeat(2, 20rem);

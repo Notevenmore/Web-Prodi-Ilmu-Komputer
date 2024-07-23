@@ -7,7 +7,7 @@
           <img src="{{ asset('img/dosen.png') }}" alt="" width=197 height=297 style="object-fit: contain;">
       </div>
   </div>
-  <div class="bg-dosen w-1/2 p-20 relative rounded-tr-[150px]">
+  <div class="bg-dosen w-1/2 p-20 relative rounded-tr-[150px] rounded-br-[11px]">
       <h1 class="text-blue-900 font-bold text-2xl">Ade Irawan,Ph.D</h1>
       <h3 class="text-xs text-blue-500">adeirawan@universtaspertamina.ac.id</h3>
       <h2 class="text-sm font-medium pb-8">ketua program studi ilmu komputer</h2>
@@ -21,13 +21,17 @@
       <div class="mt-20 bg-white w-32 text-center rounded-2xl text-dark p-1 font-bold">
           <button>Profil Dosen</button>
       </div>    
-      <div class="absolute bottom-0 right-0">
-          <div class="flex w-20 bg-white pt-3 px-2">
-              <p class="text-xs">Daftar Dosen</p>
-              <div class=" rounded-full w-14 h-7 bg-blue-900 text-center">
-                  <p class="font-bold text-white">></p>
-              </div>
-          </div>
-      </div>
+      @if(Request::routeIs('main.index'))
+        <div class="absolute bottom-0 right-0">
+          <a href="{{ route('main.dosen') }}">
+            <div class="flex bg-dosen-link pt-3 px-2">
+                <p class="text-2xl">Daftar Dosen</p>
+                <div class=" rounded-full w-14 h-7 text-center">
+                    <p class="font-bold">></p>
+                </div>
+            </div>
+          </a>
+        </div>
+      @endif
   </div>
 </div>
