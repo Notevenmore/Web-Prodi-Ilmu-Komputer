@@ -29,12 +29,12 @@ for (const peminatan of listPeminatan) {
         for (const peminat of siblings) {
             const pSibling = peminat.querySelector(".item p");
             const imgSibling = peminat.querySelector(".item img");
+            if (pSibling.classList.contains("h-120")) {
+                pSibling.classList.remove("h-120");
+            }
             peminat.classList.toggle("h-80");
             if (peminat.classList.contains("h-120")) {
                 peminat.classList.remove("h-120");
-            }
-            if (pSibling.classList.contains("h-120")) {
-                pSibling.classList.remove("h-120");
             }
             imgSibling.classList.toggle("hide");
         }

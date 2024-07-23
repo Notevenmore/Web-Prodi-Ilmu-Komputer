@@ -17,6 +17,7 @@ Route::controller(\App\Http\Controllers\IlmuKomputerController::class)->name('ma
     Route::get('/prodi/ilmu-komputer/akademik', 'akademik')->name('akademik');
     Route::get('/prodi/ilmu-komputer/fasilitas', 'fasilitas')->name('fasilitas');
     Route::get('/prodi/ilmu-komputer/berita', 'berita')->name('berita');
+    Route::get('/prodi/ilmu-komputer/dosen', 'dosen')->name('dosen');
 });
 Route::get('/', function () {
     return redirect()->route('main.index');

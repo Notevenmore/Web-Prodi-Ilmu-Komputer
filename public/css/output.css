@@ -446,6 +446,7 @@ video {
 [hidden],
 .hide {
     display: none;
+    transition: 0.7s;
 }
 
 *,
@@ -649,7 +650,7 @@ video {
 
 .h-80 {
     transition: height 0.2s;
-    height: 20rem;
+    height: 22.5rem;
 }
 
 .h-96 {
@@ -658,7 +659,7 @@ video {
 
 .h-120 {
     transition: height 0.2s;
-    height: 30rem;
+    height: 35rem;
 }
 
 .h-full {
@@ -986,7 +987,9 @@ video {
 .overflow-hidden {
     overflow: hidden;
 }
-
+.d-flex {
+    display: flex;
+}
 .rounded-2xl {
     border-radius: 1rem;
 }
@@ -1312,7 +1315,9 @@ video {
 .text-center {
     text-align: center;
 }
-
+.text-end {
+    text-align: end;
+}
 .text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1363,6 +1368,11 @@ video {
 .text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-dark {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-blue-600 {

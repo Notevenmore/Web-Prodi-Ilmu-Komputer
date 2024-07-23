@@ -293,6 +293,12 @@ class IlmuKomputerController extends Controller
             'events' => $event,
         ]);
     }
+
+    public function dosen() {
+        return view('dosen', [
+            'title' => 'Dosen | Prodi Ilmu Komputer',
+        ]);
+    }
     
     public function akademik() {
         $list_matkul = [

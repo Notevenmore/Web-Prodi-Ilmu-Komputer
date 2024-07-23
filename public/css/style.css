@@ -21,11 +21,29 @@ ul {
     margin: 0px;
     padding: 0px;
 }
-
+.text-gradient {
+    background: linear-gradient(180deg, #0C82E3 0%, #0E78CF 40.4%, #005CA8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.bg-dosen {
+    background: linear-gradient(179.65deg, rgba(194, 255, 65, 0.96) -9.07%, rgba(196, 216, 45, 0.96) 95.02%);
+}
+.bg-dosen-pict {
+    background: linear-gradient(180deg, #1362A1 0%, #3B84BF 50%, #4280B2 100%);
+    border: white solid 11px;
+    border-radius: 24px;
+    box-shadow: -1px 8px 8px #808080;
+}
+.bg-dosen-pict img {
+    border-radius: 24px;
+}
 .peminatan .list-peminatan {
     display: grid;
     grid-template-columns: repeat(2, 20rem);
-    grid-auto-rows: minmax(10rem, 20rem);
+    grid-auto-rows: minmax(10rem, 22.5rem);
     grid-gap: 32px;
     justify-content: center;
 }
