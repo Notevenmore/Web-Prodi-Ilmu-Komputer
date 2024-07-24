@@ -29,22 +29,22 @@ for (const peminatan of listPeminatan) {
         for (const peminat of siblings) {
             const pSibling = peminat.querySelector(".item p");
             const imgSibling = peminat.querySelector(".item img");
-            if (pSibling.classList.contains("h-120")) {
-                pSibling.classList.remove("h-120");
+            if (pSibling.classList.contains("h-120-with-transition")) {
+                pSibling.classList.remove("h-120-with-transition");
             }
-            peminat.classList.toggle("h-80");
-            if (peminat.classList.contains("h-120")) {
-                peminat.classList.remove("h-120");
+            peminat.classList.toggle("h-80-with-transition");
+            if (peminat.classList.contains("h-120-with-transition")) {
+                peminat.classList.remove("h-120-with-transition");
             }
             imgSibling.classList.toggle("hide");
         }
         if (img.classList.contains("hide")) {
             img.classList.remove("hide");
         }
-        peminatan.classList.toggle("h-120");
-        if (!peminatan.classList.contains("h-80")) {
-            peminatan.classList.add("h-80");
+        peminatan.classList.toggle("h-120-with-transition");
+        if (!peminatan.classList.contains("h-80-with-transition")) {
+            peminatan.classList.add("h-80-with-transition");
         }
-        p.classList.toggle("h-120");
+        p.classList.toggle("h-120-with-transition");
     });
 }

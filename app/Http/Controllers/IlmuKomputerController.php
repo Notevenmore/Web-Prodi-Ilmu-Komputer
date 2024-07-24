@@ -148,6 +148,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Ketua Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Intelligent Communication Systems And Networks',
                     'Machine Learning',
@@ -158,6 +159,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Pengantar Teknologi Informasi',
                     'Algoritma Probabilitas',
@@ -170,6 +172,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Pengantar Teknologi Informasi',
                     'Algoritma Probabilitas',
@@ -182,6 +185,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Pengantar Teknologi Informasi',
                     'Algoritma Probabilitas',
@@ -194,6 +198,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Pengantar Teknologi Informasi',
                     'Algoritma Probabilitas',
@@ -206,6 +211,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Pengantar Teknologi Informasi',
                     'Algoritma Probabilitas',
@@ -218,6 +224,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Pengantar Teknologi Informasi',
                     'Algoritma Probabilitas',
@@ -230,6 +237,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Pengantar Teknologi Informasi',
                     'Algoritma Probabilitas',
@@ -242,6 +250,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Pengantar Teknologi Informasi',
                     'Algoritma Probabilitas',
@@ -254,6 +263,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Pengantar Teknologi Informasi',
                     'Algoritma Probabilitas',
@@ -431,6 +441,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Ketua Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Intelligent Communication Systems And Networks',
                     'Machine Learning',
@@ -441,6 +452,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Pengantar Teknologi Informasi',
                     'Algoritma Probabilitas',
@@ -453,6 +465,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Pengantar Teknologi Informasi',
                     'Algoritma Probabilitas',
@@ -465,6 +478,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Pengantar Teknologi Informasi',
                     'Algoritma Probabilitas',
@@ -477,6 +491,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Pengantar Teknologi Informasi',
                     'Algoritma Probabilitas',
@@ -489,6 +504,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Pengantar Teknologi Informasi',
                     'Algoritma Probabilitas',
@@ -501,6 +517,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Pengantar Teknologi Informasi',
                     'Algoritma Probabilitas',
@@ -513,6 +530,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Pengantar Teknologi Informasi',
                     'Algoritma Probabilitas',
@@ -525,6 +543,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Pengantar Teknologi Informasi',
                     'Algoritma Probabilitas',
@@ -537,6 +556,7 @@ class IlmuKomputerController extends Controller
                 'nama' => 'Ade Irawan, Ph.D',
                 'email' => 'Adeirawan@universitaspertamina.ac.id',
                 'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'img' => 'img/dosen.png',
                 'keahlian' => [
                     'Pengantar Teknologi Informasi',
                     'Algoritma Probabilitas',

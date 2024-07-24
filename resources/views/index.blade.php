@@ -33,27 +33,27 @@
   </div>
   <div class="pb-32 peminatan w-full">
       <div class="w-full text-white list-peminatan">
-          <div class="w-80 h-36 h-80 bg-sky-800 p-6 rounded-2xl overflow-hidden item">
+          <div class="w-80 h-36-with-transition h-80-with-transition bg-sky-800 p-6 rounded-2xl overflow-hidden item">
               <h2 class="text-xl leading-10 font-bold">Artificial Intellegence</h2>
-              <p class="text-xs overflow-hidden h-24">Tujuan dari Program Studi Ilmu Komputer mengarah kepada pencapaian sebagai berikut: <br>
+              <p class="text-xs overflow-hidden h-24-with-transition">Tujuan dari Program Studi Ilmu Komputer mengarah kepada pencapaian sebagai berikut: <br>
                 Pengembangan kualitas pendidikan untuk menghasilkan lulusan dengan kapasitas intelektual yang tinggi dalam pengetahuan dan keahlian, yang dapat mengkonsolidasikan dan menguatkan integritas nasional. <br>
                 Pengembangan kegiatan dan kualitas penelitian mahasiswa dan dosen dalam kemajuan sains dan teknologi, serta untuk mengembangkan dan memasyarakatkan sains dan teknologi yang relevan untuk mencapai kesejahteraan bangsa. <br>
                 Pengembangan kegiatan pengabdian masyarakat oleh mahasiswa dan dosen untuk memberdayakan penduduk Indonesia. </p>
               <img src="{{ asset('/img/visi-img.png') }}" alt="" class="ml-16 w-60">
           </div>
-          <div class="w-80 h-36 h-80 bg-sky-800 p-6 rounded-2xl  overflow-hidden item">
+          <div class="w-80 h-36-with-transition h-80-with-transition bg-sky-800 p-6 rounded-2xl  overflow-hidden item">
               <h2 class="text-xl leading-10 font-bold">Data Science</h2>
               <p class="text-xs overflow-hidden h-24">Dalam mencapai visi yang telah dirancang, kami akan mengemban misi: </p>
               <img src="{{ asset('/img/misi-img.png') }}" alt="" class="ml-12 w-60">
           </div>
-          <div class="w-80 h-36 h-80 bg-sky-800 p-6 rounded-2xl  overflow-hidden item">
+          <div class="w-80 h-36-with-transition h-80-with-transition bg-sky-800 p-6 rounded-2xl  overflow-hidden item">
               <h2 class="text-xl leading-10 font-bold">Website Development</h2>
-              <p class="text-xs overflow-hidden h-24">Tujuan dari program studi ilmu komputer mengarahkan kepada pencapaian sebagai berikut:</p>
+              <p class="text-xs overflow-hidden h-24-with-transition">Tujuan dari program studi ilmu komputer mengarahkan kepada pencapaian sebagai berikut:</p>
               <img src="{{ asset('/img/tujuan-img.png') }}" alt="" class="ml-14 mt-14 w-60">
           </div>
-          <div class="w-80 h-36 h-80 bg-sky-800 p-6 rounded-2xl  overflow-hidden item">
+          <div class="w-80 h-36-with-transition h-80-with-transition bg-sky-800 p-6 rounded-2xl  overflow-hidden item">
               <h2 class="text-xl leading-10 font-bold">Mobile Development</h2>
-              <p class="text-xs overflow-hidden h-24">Terdapat berbagai peminatan yang dapat dikembangkan dalam program studi ilmu komputer universitas Pertamina yaitu sebagai berikut:</p>
+              <p class="text-xs overflow-hidden h-24-with-transition">Terdapat berbagai peminatan yang dapat dikembangkan dalam program studi ilmu komputer universitas Pertamina yaitu sebagai berikut:</p>
               <img src="{{ asset('/img/tujuan-img.png') }}" alt="" class="ml-14 mt-6 w-60">
           </div>
       </div>

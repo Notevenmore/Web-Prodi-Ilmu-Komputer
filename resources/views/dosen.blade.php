@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-  <section id="dosen" class="container p-20">
+  <section id="dosen" class=" flex flex-col w-full items-center p-20">
     <div class="heading">
       <div class="title">
         <h1 class="title">Daftar Dosen</h1>

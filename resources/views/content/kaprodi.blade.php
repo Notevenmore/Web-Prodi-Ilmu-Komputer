@@ -1,10 +1,10 @@
-<div class="py-32 flex justify-center dosen">
+<div class="py-32 flex justify-center w-[100rem]">
   <div class="img relative">
       <div class=" pb-2">
           <h1 class="font-bold text-2xl text-center text-gradient">Kepala Prodi</h1>
       </div>
       <div class="relative d-flex items-center justify-center bg-dosen-pict left-10 z-10 " style="width:265px; height:363px;">
-          <img src="{{ asset('img/dosen.png') }}" alt="" width=197 height=297 style="object-fit: contain;">
+          <img src="{{ asset($kaprodi['img']) }}" alt="" width=197 height=297 style="object-fit: contain;">
       </div>
   </div>
   <div class="bg-dosen w-1/2 p-20 relative rounded-tr-[150px] rounded-br-[11px]">
@@ -17,7 +17,6 @@
           <li>{{ $keahlian }}</li>
         @endforeach
       </ul>
-
       <div class="mt-20 bg-white w-32 text-center rounded-2xl text-dark p-1 font-bold">
           <button>Profil Dosen</button>
       </div>    
