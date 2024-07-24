@@ -9,27 +9,27 @@
 {{-- end Section Hero  --}}
 {{-- section informasi program studi --}}
 <section class="w-full information">
-  <div class="flex items-center justify-center py-10 bg-sky-800">
-      <div class="title" >
-          <h2 class="text-white font-bold text-lg ">INFORMASI PROGRAM STUDI</h2>
+  <div class="flex items-center justify-center py-10 bg-gradient-to-b from-[#0C82E3] to-[#0E78CF]">
+      <div class=" bg-gradient-to-b from-hijau1 to-hijau2 w-[24rem] h-[3rem] title flex items-center justify-center" >
+          <h2 class=" font-bold text-lg text-biru_dark">INFORMASI PROGRAM STUDI</h2>
       </div>
   </div>
-  <div class="bg-sky-800 h-36 flex justify-between px-52 gap-3 deskripsi">
+  <div class="bg-gradient-to-b from-[#0E78CF] to-[#005CA8] h-36 flex justify-between px-52 gap-3 deskripsi">
       <div class="h-32 flex justify-center flex-col text-center  ">
-          <h2 class=" text-white text-3xl font-bold">128</h2>
-          <h3 class="text-white py-1 text-lg font-bold">Total Mahasiswa</h3>
+          <h2 class=" bg-clip-text text-transparent bg-gradient-to-b from-hijau1 to-hijau2 text-3xl font-extrabold">128</h2>
+          <h3 class="text-white py-1 text-lg font-semibold">Total Mahasiswa</h3>
       </div>
       <div class="h-32 flex justify-center flex-col text-center  ">
-          <h2 class=" text-white text-3xl font-bold">B</h2>
-          <h3 class="text-white py-1 text-lg font-bold">Akreditasi</h3>
+          <h2 class=" bg-clip-text text-transparent bg-gradient-to-b from-hijau1 to-hijau2 text-3xl font-extrabold">B</h2>
+          <h3 class="text-white py-1 text-lg font-semibold">Akreditasi</h3>
       </div>
       <div class="h-32 flex justify-center flex-col text-center  ">
-          <h2 class=" text-white text-3xl font-bold">8</h2>
-          <h3 class="text-white py-1 text-lg font-bold">Total Pengajar</h3>
+          <h2 class=" bg-clip-text text-transparent bg-gradient-to-b from-hijau1 to-hijau2 text-3xl font-extrabold">8</h2>
+          <h3 class="text-white py-1 text-lg font-semibold">Total Pengajar</h3>
       </div>
   </div>
   <div class="text-center pt-28 pb-6">
-      <h1 class="text-4xl font-bold">Peminatan</h1>
+      <h1 class="text-4xl font-bold text-biru">PEMINATAN</h1>
   </div>
   <div class="pb-32 peminatan w-full">
       <div class="w-full text-white list-peminatan">
@@ -102,14 +102,14 @@
 </section>
 {{-- end section event --}}
 {{-- section video profil --}}
-<section id="content-videoprofil">
-  <div class="description">
-    <h1 class="title">Video Profil Prodi</h1>
+<section class="bg-[#F8FCDA] flex items-center justify-center p-24 gap-20 mt-40">
+  <div class="description flex flex-col gap-4">
+    <h1 class="title text-biru">Video Profil Prodi</h1>
     <p>Sekilas Video Profil Program Studi Ilmu Komputer <br> Universitas Pertamina</p>
-    <button class="watch">Tonton Video</button>
+    <button class="watch bg-biru text-white rounded-xl w-40 h-8">Tonton Video</button>
   </div>
   <div class="video">
-    <video width="552" height="277" class="watch">
+    <video width="552" height="277" class="watch rounded-3xl drop-shadow-video">
       <source src="{{ asset('video/video.mp4') }}" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -118,7 +118,7 @@
 {{-- end section video profil --}}
 {{-- section partnership --}}
 <section id="content-partnership">
-  <h1 class="title">Partnership</h1>
+  <h1 class="title text-red-500 font-bold text-2xl">Partnership</h1>
   <div class="partnership-logo">
     <img src="{{ asset('img/Pertamina.png') }}" alt="">
     <img src="{{ asset('img/Pertamina Foundation.png') }}" alt="">
