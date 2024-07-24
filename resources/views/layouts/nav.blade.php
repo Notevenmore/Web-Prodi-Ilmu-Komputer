@@ -1,5 +1,5 @@
 <header>
-  <nav class="flex justify-between items-center px-24 rounded-b-xl bg-white ">
+  <nav class="flex justify-between items-center px-24 bg-white ">
       <div class="py-4">
           <img src="{{ asset("/img/logo-navbar.png") }}" alt="" class="w-72">
       </div>

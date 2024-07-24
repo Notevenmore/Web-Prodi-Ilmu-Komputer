@@ -143,10 +143,141 @@ class IlmuKomputerController extends Controller
                 'img' => 'img/Hover Berita.png',
             ],
         ];
+        $lectures = [
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Ketua Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Intelligent Communication Systems And Networks',
+                    'Machine Learning',
+                    'Internet of Things (IOT)',
+                ],
+            ],
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Pengantar Teknologi Informasi',
+                    'Algoritma Probabilitas',
+                    'Statistika',
+                    'Jaringan Komputer',
+                    'Sistem Cerdas',
+                ],
+            ],
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Pengantar Teknologi Informasi',
+                    'Algoritma Probabilitas',
+                    'Statistika',
+                    'Jaringan Komputer',
+                    'Sistem Cerdas',
+                ],
+            ],
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Pengantar Teknologi Informasi',
+                    'Algoritma Probabilitas',
+                    'Statistika',
+                    'Jaringan Komputer',
+                    'Sistem Cerdas',
+                ],
+            ],
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Pengantar Teknologi Informasi',
+                    'Algoritma Probabilitas',
+                    'Statistika',
+                    'Jaringan Komputer',
+                    'Sistem Cerdas',
+                ],
+            ],
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Pengantar Teknologi Informasi',
+                    'Algoritma Probabilitas',
+                    'Statistika',
+                    'Jaringan Komputer',
+                    'Sistem Cerdas',
+                ],
+            ],
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Pengantar Teknologi Informasi',
+                    'Algoritma Probabilitas',
+                    'Statistika',
+                    'Jaringan Komputer',
+                    'Sistem Cerdas',
+                ],
+            ],
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Pengantar Teknologi Informasi',
+                    'Algoritma Probabilitas',
+                    'Statistika',
+                    'Jaringan Komputer',
+                    'Sistem Cerdas',
+                ],
+            ],
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Pengantar Teknologi Informasi',
+                    'Algoritma Probabilitas',
+                    'Statistika',
+                    'Jaringan Komputer',
+                    'Sistem Cerdas',
+                ],
+            ],
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Pengantar Teknologi Informasi',
+                    'Algoritma Probabilitas',
+                    'Statistika',
+                    'Jaringan Komputer',
+                    'Sistem Cerdas',
+                ],
+            ],
+        ];
+        $kaprodi = [];
+        $dosen = [];
+        foreach($lectures as $lecture) {
+            if($lecture['posisi'] == "Ketua Program Studi Ilmu Komputer"){
+                $kaprodi = $lecture;
+            } else {
+                array_push($dosen, $lecture);
+            }
+        }
         return view('index', [
             'title' => 'Prodi Ilmu Komputer',
             'news' => $berita,
             'events' => $event,
+            'kaprodi' => $kaprodi,
+            'dosen' => $dosen,
         ]);
     }
 
@@ -295,8 +426,139 @@ class IlmuKomputerController extends Controller
     }
 
     public function dosen() {
+        $lectures = [
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Ketua Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Intelligent Communication Systems And Networks',
+                    'Machine Learning',
+                    'Internet of Things (IOT)',
+                ],
+            ],
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Pengantar Teknologi Informasi',
+                    'Algoritma Probabilitas',
+                    'Statistika',
+                    'Jaringan Komputer',
+                    'Sistem Cerdas',
+                ],
+            ],
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Pengantar Teknologi Informasi',
+                    'Algoritma Probabilitas',
+                    'Statistika',
+                    'Jaringan Komputer',
+                    'Sistem Cerdas',
+                ],
+            ],
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Pengantar Teknologi Informasi',
+                    'Algoritma Probabilitas',
+                    'Statistika',
+                    'Jaringan Komputer',
+                    'Sistem Cerdas',
+                ],
+            ],
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Pengantar Teknologi Informasi',
+                    'Algoritma Probabilitas',
+                    'Statistika',
+                    'Jaringan Komputer',
+                    'Sistem Cerdas',
+                ],
+            ],
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Pengantar Teknologi Informasi',
+                    'Algoritma Probabilitas',
+                    'Statistika',
+                    'Jaringan Komputer',
+                    'Sistem Cerdas',
+                ],
+            ],
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Pengantar Teknologi Informasi',
+                    'Algoritma Probabilitas',
+                    'Statistika',
+                    'Jaringan Komputer',
+                    'Sistem Cerdas',
+                ],
+            ],
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Pengantar Teknologi Informasi',
+                    'Algoritma Probabilitas',
+                    'Statistika',
+                    'Jaringan Komputer',
+                    'Sistem Cerdas',
+                ],
+            ],
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Pengantar Teknologi Informasi',
+                    'Algoritma Probabilitas',
+                    'Statistika',
+                    'Jaringan Komputer',
+                    'Sistem Cerdas',
+                ],
+            ],
+            [
+                'nama' => 'Ade Irawan, Ph.D',
+                'email' => 'Adeirawan@universitaspertamina.ac.id',
+                'posisi' => 'Dosen Program Studi Ilmu Komputer',
+                'keahlian' => [
+                    'Pengantar Teknologi Informasi',
+                    'Algoritma Probabilitas',
+                    'Statistika',
+                    'Jaringan Komputer',
+                    'Sistem Cerdas',
+                ],
+            ],
+        ];
+        $kaprodi = [];
+        $dosen = [];
+        foreach($lectures as $lecture) {
+            if($lecture['posisi'] == "Ketua Program Studi Ilmu Komputer"){
+                $kaprodi = $lecture;
+            } else {
+                array_push($dosen, $lecture);
+            }
+        }
         return view('dosen', [
             'title' => 'Dosen | Prodi Ilmu Komputer',
+            'kaprodi' => $kaprodi,
+            'dosen' => $dosen,
         ]);
     }
     

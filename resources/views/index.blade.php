@@ -90,7 +90,7 @@
 {{-- endsection alumni & kemahasiswaan --}}
 {{-- section dosen --}}
 <section>
-  @include('content.listdosen')
+  @include('content.kaprodi')
 </section>
 {{-- endsection dosen --}}
 <section id="content-news">

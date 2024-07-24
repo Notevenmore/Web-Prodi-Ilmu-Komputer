@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.h-24 {
+    transition: height 0.2s;
+    height: 4rem;
+    overflow: hidden;
+}
+.h-36 {
+    height: 10rem;
+}
+.h-80 {
+    transition: height 0.2s;
+    height: 22.5rem;
+}
+.h-120 {
+    transition: height 0.2s;
+    height: 35rem;
+}
+.hide {
+    display: none;
+    transition: 0.7s;
+}
