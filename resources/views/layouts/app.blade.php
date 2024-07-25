@@ -16,6 +16,9 @@
   @include('layouts.nav')
   <section id="content">
     @yield('content')
+    @if(Request::routeIs('main.dosen'))
+      {{ $slot }}
+    @endif
   </section>
   @include('layouts.footer')
   @if(Request::routeIs('main.index'))
