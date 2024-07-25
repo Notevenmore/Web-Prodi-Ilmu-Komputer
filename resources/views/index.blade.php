@@ -12,14 +12,8 @@
 {{-- section dosen --}}
 <livewire:dosen />
 
-<section id="content-news">
-  @include('content.newscontent')
-</section>
-
-{{-- section event --}}
-<section id="content-event">
-  @include('content.eventcontent')
-</section>
+{{-- section event & news--}}
+<livewire:event-news />
 
 {{-- section video profil --}}
 <livewire:profile-video-prodi />
@@ -27,6 +21,5 @@
 {{-- section partnership --}}
 <livewire:partnership />
 
-<div class="decoration">
-</div>
+<div class="decoration"></div>
 @endsection

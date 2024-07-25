@@ -16,7 +16,7 @@
   @include('layouts.nav')
   <section id="content">
     @yield('content')
-    @if(Request::routeIs('main.dosen'))
+    @if(Request::routeIs(['main.dosen', 'main.berita']))
       {{ $slot }}
     @endif
   </section>
