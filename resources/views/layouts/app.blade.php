@@ -15,19 +15,15 @@
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <link rel="stylesheet" href="{{ asset('css/output.css') }}">
 </head>
-
-<body>
-  @include('layouts.nav')
-  <section id="content">
+  <body>
+    @include('layouts.nav')
     @yield('content')
     @if(Request::routeIs(['main.dosen', 'main.berita']))
       {{ $slot }}
     @endif
-  </section>
-  @include('layouts.footer')
-  @if(Request::routeIs('main.index'))
-    <script src="{{ asset('js/script.js') }}"></script>
-  @endif
-</body>
-
+    @include('layouts.footer')
+    @if(Request::routeIs('main.index'))
+      <script src="{{ asset('js/script.js') }}"></script>
+    @endif
+  </body>
 </html>

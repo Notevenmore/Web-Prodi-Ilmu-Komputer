@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Models\Peminatan;
 use Livewire\Component;
 
 class ProdiInformation extends Component
@@ -21,43 +22,14 @@ class ProdiInformation extends Component
         ]
     ];
 
-    private $prodi_peminatan = [
-        [
-            'nama' => 'Artificial Intelligence',
-            'deskripsi' => 'Tujuan dari Program Studi Ilmu Komputer mengarah kepada pencapaian sebagai berikut: <br>
-              Pengembangan kualitas pendidikan untuk menghasilkan lulusan dengan kapasitas intelektual yang tinggi dalam pengetahuan dan keahlian, yang dapat mengkonsolidasikan dan menguatkan integritas nasional. <br>
-              Pengembangan kegiatan dan kualitas penelitian mahasiswa dan dosen dalam kemajuan sains dan teknologi, serta untuk mengembangkan dan memasyarakatkan sains dan teknologi yang relevan untuk mencapai kesejahteraan bangsa. <br>
-              Pengembangan kegiatan pengabdian masyarakat oleh mahasiswa dan dosen untuk memberdayakan penduduk Indonesia.',
-            'img' => '/img/visi-img.png',
-        ],
-        [
-            'nama' => 'Data Science',
-            'deskripsi' => 'Tujuan dari Program Studi Ilmu Komputer mengarah kepada pencapaian sebagai berikut: <br>
-              Pengembangan kualitas pendidikan untuk menghasilkan lulusan dengan kapasitas intelektual yang tinggi dalam pengetahuan dan keahlian, yang dapat mengkonsolidasikan dan menguatkan integritas nasional. <br>
-              Pengembangan kegiatan dan kualitas penelitian mahasiswa dan dosen dalam kemajuan sains dan teknologi, serta untuk mengembangkan dan memasyarakatkan sains dan teknologi yang relevan untuk mencapai kesejahteraan bangsa. <br>
-              Pengembangan kegiatan pengabdian masyarakat oleh mahasiswa dan dosen untuk memberdayakan penduduk Indonesia.',
-            'img' => '/img/misi-img.png',
-        ],
-        [
-            'nama' => 'Website Development',
-            'deskripsi' => 'Tujuan dari Program Studi Ilmu Komputer mengarah kepada pencapaian sebagai berikut: <br>
-              Pengembangan kualitas pendidikan untuk menghasilkan lulusan dengan kapasitas intelektual yang tinggi dalam pengetahuan dan keahlian, yang dapat mengkonsolidasikan dan menguatkan integritas nasional. <br>
-              Pengembangan kegiatan dan kualitas penelitian mahasiswa dan dosen dalam kemajuan sains dan teknologi, serta untuk mengembangkan dan memasyarakatkan sains dan teknologi yang relevan untuk mencapai kesejahteraan bangsa. <br>
-              Pengembangan kegiatan pengabdian masyarakat oleh mahasiswa dan dosen untuk memberdayakan penduduk Indonesia.',
-            'img' => '/img/tujuan-img.png',
-        ],
-        [
-            'nama' => 'Mobile Development',
-            'deskripsi' => 'Tujuan dari Program Studi Ilmu Komputer mengarah kepada pencapaian sebagai berikut: <br>
-              Pengembangan kualitas pendidikan untuk menghasilkan lulusan dengan kapasitas intelektual yang tinggi dalam pengetahuan dan keahlian, yang dapat mengkonsolidasikan dan menguatkan integritas nasional. <br>
-              Pengembangan kegiatan dan kualitas penelitian mahasiswa dan dosen dalam kemajuan sains dan teknologi, serta untuk mengembangkan dan memasyarakatkan sains dan teknologi yang relevan untuk mencapai kesejahteraan bangsa. <br>
-              Pengembangan kegiatan pengabdian masyarakat oleh mahasiswa dan dosen untuk memberdayakan penduduk Indonesia.',
-            'img' => '/img/tujuan-img.png',
-        ],
-    ];
+    private $prodi_peminatan = [];
 
     public function render()
     {
+        $peminatans = Peminatan::all();
+        foreach($peminatans as $peminatan) {
+            array_push($this->prodi_peminatan, $peminatan->toArray());
+        }
         return view('livewire.prodi-information')->with([
             'prodi_information' => $this->prodi_information,
             'prodi_peminatan' => $this->prodi_peminatan, 

@@ -3,9 +3,9 @@
     <div class="w-full text-white list-peminatan">
         @foreach($prodi_peminatan as $peminatan)
             <x-peminatan.item 
-                :nama="$peminatan['nama']" 
-                :deskripsi="$peminatan['deskripsi']" 
-                :img="$peminatan['img']"
+                :nama="$peminatan['title']" 
+                :deskripsi="$peminatan['description']" 
+                :img="$peminatan['image']"
             />
         @endforeach
     </div>
