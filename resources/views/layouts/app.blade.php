@@ -18,7 +18,7 @@
   <body>
     @include('layouts.nav')
     @yield('content')
-    @if(Request::routeIs(['main.dosen', 'main.berita']))
+    @if(Request::routeIs(['main.dosen', 'main.berita', 'main.akademik']))
       {{ $slot }}
     @endif
     @include('layouts.footer')
