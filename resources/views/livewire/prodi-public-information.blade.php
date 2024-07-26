@@ -1,4 +1,4 @@
-<section class="w-full pb-3 alumni">
+<section class="w-full pb-3">
     <div class="w-full bg-sky-800 px-20 py-12">
         <div class="h-[1040px] text-white">
             <div class=" flex justify-between mb-10">

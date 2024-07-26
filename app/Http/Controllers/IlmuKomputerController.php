@@ -13,17 +13,4 @@ class IlmuKomputerController extends Controller
         ]);
     }
     
-    public function akademik() {
-        
-        return view('akademik', [
-            'title' => 'Akademik | Prodi Ilmu Komputer',
-        ]);
-    }
-
-    public function fasilitas() {
-        return view('fasilitas', [
-            'title' => 'Fasilitas | Prodi Ilmu Komputer',
-        ]);
-    }
-    
 }

@@ -1,10 +1,6 @@
-<section id="dosen" class="flex flex-col w-full items-center">
-    <section id="content-dosen">
-        <x-dosen.kaprodi.index :$kaprodi />
-    </section>
+<section class="flex flex-col w-full items-center">
+    <x-dosen.kaprodi.index :$kaprodi />
     @if(Request::routeIs('main.dosen'))
-        <section id="list-dosen">
-            <x-dosen.list.index :$dosen/>
-        </section>
+        <x-dosen.list.index :$dosen />
     @endif
 </section>
