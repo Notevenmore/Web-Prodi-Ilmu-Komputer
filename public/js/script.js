@@ -5,9 +5,8 @@ $(document).ready(() => {
     });
 });
 
-const listPeminatan = document
-    .getElementsByClassName("peminatan")[0]
-    .getElementsByClassName("list-peminatan")[0].children;
+const listPeminatan =
+    document.getElementsByClassName("list-peminatan")[0].children;
 
 for (const peminatan of listPeminatan) {
     peminatan.addEventListener("click", () => {

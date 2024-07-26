@@ -16,6 +16,12 @@ export default {
             dropShadow: {
                 video: "0 0 16px rgba(0,0,0, .45)",
             },
+            gridTemplateColumns: {
+                peminatan: "repeat(2, 20rem)",
+            },
+            gridAutoRows: {
+                peminatan: "minmax(10rem, 22.5rem)",
+            },
         },
     },
     plugins: [],

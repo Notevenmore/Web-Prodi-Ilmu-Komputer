@@ -70,41 +70,7 @@ ul {
     font-size: 1.5rem;
     text-fill-color: transparent;
 }
-.peminatan .list-peminatan {
-    display: grid;
-    grid-template-columns: repeat(2, 20rem);
-    grid-auto-rows: minmax(10rem, 22.5rem);
-    grid-gap: 32px;
-    justify-content: center;
-}
-.list-peminatan div:nth-child(1) {
-    grid-row: 1;
-    grid-column: 1;
-    align-self: start;
-}
-.list-peminatan div:nth-child(2) {
-    grid-row: 1;
-    grid-column: 2;
-    align-self: start
-}
-.list-peminatan div:nth-child(3) {
-    grid-row: 2;
-    grid-column: 1;
-    align-self: end;
-}
-.list-peminatan div:nth-child(4) {
-    grid-row: 2;
-    grid-column: 2;
-    align-self: end;
-}
-.list-peminatan > div{
-    position: relative;
-}
-.list-peminatan > div img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
+
 section#content {
     display: flex;
     flex-direction: column;
@@ -662,13 +628,13 @@ section#berita-utama .event-column-list .list img {
         border-bottom-left-radius: 70px !important;
         border-top-right-radius: 70px !important;
     }
-    .peminatan .list-peminatan {
+    /* .peminatan .list-peminatan {
         display: grid;
         grid-template-columns: repeat(1, 0.1fr);
         gap: 32px;
         align-items: center;
         justify-content: center;
-    }
+    } */
     section#news {
         flex-wrap: wrap;
     }
