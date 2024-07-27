@@ -20,6 +20,4 @@
 
 {{-- section partnership --}}
 <livewire:partnership />
-
-<div class="decoration"></div>
 @endsection
