@@ -14,12 +14,9 @@
     <link rel="stylesheet" href="{{ asset('css/output.css') }}">
   </head>
   <body>
-    @include('layouts.nav')
-    @yield('content')
-    @if(Request::routeIs(['main.dosen', 'main.berita', 'main.akademik', 'main.fasilitas']))
-      {{ $slot }}
-    @endif
-    @include('layouts.footer')
+    <x-navigation />
+    {{ $slot }}
+    <x-footer.index />
     @if(Request::routeIs('main.index'))
       <script src="{{ asset('js/script.js') }}"></script>
     @endif
