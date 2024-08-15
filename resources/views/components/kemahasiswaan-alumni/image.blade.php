@@ -1,2 +1,2 @@
 @props(['image',])
-<div class="min-w-[113px] min-h-[199px] sm:min-w-[177px] sm:min-h-[272px] lg:min-w-[354px] lg:min-h-[525px] w-full h-full max-w-[30rem] max-h-[30rem bg-no-repeat bg-center bg-cover rounded-xl" style="background-image: url('{{ asset($image) }}')"></div>
+<div class="min-w-[113px] min-h-[199px] sm:min-w-[177px] sm:min-h-[272px] lg:min-w-[354px] lg:min-h-[300px] w-full h-full max-w-[30rem] max-h-[30rem] bg-no-repeat bg-center bg-cover rounded-xl" style="background-image: url('{{ asset($image) }}')"></div>

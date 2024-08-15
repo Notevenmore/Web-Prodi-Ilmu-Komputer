@@ -53,17 +53,17 @@ function toggleClass(div, siblings) {
     }
 
     imgSibling.classList.toggle("w-24");
-    imgSibling.classList.toggle("sm:w-60");
+    imgSibling.classList.toggle("sm:w-44");
     imgSibling.classList.toggle("sm:-bottom-10");
     imgSibling.classList.toggle("sm:-right-10");
     imgSibling.classList.toggle("w-12");
-    imgSibling.classList.toggle("sm:w-36");
+    imgSibling.classList.toggle("sm:w-20");
 
     if (img.classList.contains("w-12")) {
         img.classList.remove("w-12");
-        img.classList.remove("sm:w-36");
+        img.classList.remove("sm:w-20");
         img.classList.add("w-24");
-        img.classList.add("sm:w-60");
+        img.classList.add("sm:w-44");
         img.classList.add("sm:-bottom-10");
         img.classList.add("sm:-right-10");
     }
