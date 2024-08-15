@@ -19,4 +19,7 @@
     
     {{-- section partnership --}}
     <livewire:partnership />
+
+    <img src="{{ asset('img/decoration.png') }}" class="w-screen" />
+    
 </div>

@@ -15,10 +15,6 @@ class Partnership extends Component
             'name' => 'Pertamina Foundation',
             'image' => 'img/Pertamina Foundation.png',
         ],
-        [
-            'name' => 'Universitas Pertamina',
-            'image' => 'img/Universitas Pertamina.png',
-        ],
     ];
     public function render()
     {

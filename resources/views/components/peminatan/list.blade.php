@@ -1,12 +1,11 @@
 @props(['prodi_peminatan'])
-<div class="pb-32 w-full">
-    <div class="w-full text-white list-peminatan grid grid-cols-peminatan auto-rows-peminatan gap-8 justify-center">
-        @foreach($prodi_peminatan as $peminatan)
-            <x-peminatan.item 
-                :nama="$peminatan['title']" 
-                :deskripsi="$peminatan['description']" 
-                :img="$peminatan['image']"
-            />
-        @endforeach
-    </div>
+<div class="pb-32 text-white list-peminatan grid grid-cols-[repeat(2,10rem)] grid-rows-3 sm:grid-cols-[repeat(2,17rem)] md:grid-cols-[repeat(2,20rem)] sm:grid-rows-5 md:grid-rows-10  justify-items-center items-center gap-6 sm:gap-12 justify-center">
+    @foreach($prodi_peminatan as $index => $peminatan)
+        <x-peminatan.item 
+            :nama="$peminatan['title']" 
+            :deskripsi="$peminatan['description']" 
+            :img="$peminatan['image']"
+            :$index
+        />
+    @endforeach
 </div>

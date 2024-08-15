@@ -2,7 +2,7 @@
 export default {
     content: [
         "./resources/**/*.blade.php",
-        "./resources/**/*.js",
+        "./public/**/*.js",
         "./resources/**/*.vue",
     ],
     theme: {
@@ -16,11 +16,10 @@ export default {
             dropShadow: {
                 video: "0 0 16px rgba(0,0,0, .45)",
             },
-            gridTemplateColumns: {
-                peminatan: "repeat(2, 20rem)",
-            },
-            gridAutoRows: {
-                peminatan: "minmax(10rem, 22.5rem)",
+            gridTemplateRows: {
+                10: "repeat(4, minmax(10rem, 10rem))",
+                5: "repeat(4, minmax(7rem, 7rem))",
+                3: "repeat(4, minmax(4rem, 4rem))",
             },
         },
     },
