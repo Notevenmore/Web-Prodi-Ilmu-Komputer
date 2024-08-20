@@ -1,5 +1,5 @@
 @props(['news'])
-<ul class="flex flex-col gap-2 md:gap-0 xl:gap-1 2xl:gap-3 w-full lg:max-h-full lg:overflow-y-scroll" @if(Request::routeIs('main.berita')) style="gap: 24px;" @endif>
+<ul class="flex flex-col gap-2 md:gap-0 xl:gap-1 2xl:gap-3 w-full lg:max-h-full @if(Request::routeIs('main.berita')) lg:overflow-y-scroll @endif" @if(Request::routeIs('main.berita')) style="gap: 24px;" @endif>
     @php 
       $start = 3;
       $end =  11;
