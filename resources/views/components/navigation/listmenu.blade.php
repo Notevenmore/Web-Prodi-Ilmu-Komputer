@@ -7,7 +7,7 @@
         <li>
             <div class="group flex flex-col items-center xl:text-base text-sm">
                 <a href="" class=" group-hover:text-gray-700 text-black font-medium">Kontak</a>
-                <div class=" w-0 group-hover:w-10 xl:group-hover:w-14 duration-300 rounded-xl bg-red-600 h-1"></div>
+                <div class=" w-0 group-hover:w-3/4 duration-300 rounded-xl bg-red-600 h-1"></div>
             </div>
         </li>
     </ul>

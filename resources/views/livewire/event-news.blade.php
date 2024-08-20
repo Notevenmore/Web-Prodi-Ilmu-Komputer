@@ -1,4 +1,4 @@
-<div class="mb-20 w-screen grid grid-cols-1 justify-items-center justify-center gap-[147px] mt-[147px] h-auto">
+<div class="mb-20 w-screen flex flex-col items-center justify-center gap-[147px] @if(Request::routeIs('main.index')) grid grid-cols-1 justify-items-center mt-[147px] @endif  h-auto">
     @if(Request::routeIs('main.berita'))
         <x-event-news-banner :img="$news['img']" />
     @endif

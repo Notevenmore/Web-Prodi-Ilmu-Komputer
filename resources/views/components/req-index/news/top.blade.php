@@ -1,6 +1,6 @@
 @props(['news'])
-<div class="flex flex-col flex-wrap items-stretch w-full max-w-[45rem] h-full">
-    <img src="{{ asset($news['img']) }}" alt="" class="rounded-3xl mb-[8px]">
+<div class="flex flex-col items-stretch w-full h-full ">
+    <img src="{{ asset($news['img']) }}" alt="" class="rounded-3xl mb-[8px] w-full h-full">
     <x-heading 
         :title="$news['title']" 
         :date="$news['date']" 

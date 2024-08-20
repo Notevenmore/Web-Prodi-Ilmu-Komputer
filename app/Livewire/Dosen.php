@@ -124,19 +124,6 @@ class Dosen extends Component
                 'Sistem Cerdas',
             ],
         ],
-        [
-            'nama' => 'Ade Irawan, Ph.D',
-            'email' => 'Adeirawan@universitaspertamina.ac.id',
-            'posisi' => 'Dosen Program Studi Ilmu Komputer',
-            'img' => 'img/dosen.png',
-            'keahlian' => [
-                'Pengantar Teknologi Informasi',
-                'Algoritma Probabilitas',
-                'Statistika',
-                'Jaringan Komputer',
-                'Sistem Cerdas',
-            ],
-        ],
     ];
 
     private function getDosen($posisi) {
@@ -154,11 +141,10 @@ class Dosen extends Component
     public function render()
     {
         $kaprodi = $this->getDosen('Ketua Program Studi Ilmu Komputer')[0];
-        $dosen = $this->getDosen('Dosen Program Studi Ilmu Komputer');
         
         return view('livewire.dosen')->with([
             'kaprodi' => $kaprodi,
-            'dosen' => $dosen,
+            'dosen' => $this->lectures
         ]);
     }
 }
