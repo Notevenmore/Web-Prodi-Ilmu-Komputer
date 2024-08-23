@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Livewire\Dosen;
 use App\Livewire\EventNews;
 use App\Livewire\Akademik;
+use App\Livewire\DetailDosen;
 use App\Livewire\Fasilitas;
 use App\Livewire\Main;
 
@@ -23,6 +24,7 @@ Route::get('/prodi/ilmu-komputer/akademik', Akademik::class)->name('main.akademi
 Route::get('/prodi/ilmu-komputer/dosen', Dosen::class)->name('main.dosen');
 Route::get('/prodi/ilmu-komputer/berita', EventNews::class)->name('main.berita');
 Route::get('/prodi/ilmu-komputer/fasilitas', Fasilitas::class)->name('main.fasilitas');
+Route::get('/prodi/ilmu-komputer/dosen/{id}', DetailDosen::class)->name('detail.dosen');
 Route::get('/', function () {
     return redirect()->route('main.index');
 });
