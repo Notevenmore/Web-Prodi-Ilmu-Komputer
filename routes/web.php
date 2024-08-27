@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\About;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Dosen;
 use App\Livewire\EventNews;
@@ -31,6 +32,7 @@ Route::get('/prodi/ilmu-komputer/fasilitas', Fasilitas::class)->name('main.fasil
 Route::get('/prodi/ilmu-komputer/dosen/{id}', DetailDosen::class)->name('detail.dosen');
 Route::get('/prodi/ilmu-komputer/kegiatan', Mahasiswa::class)->name('main.mahasiswa');
 Route::get('/prodi/ilmu-komputer/alumni', Alumni::class)->name('main.alumni');
+Route::get('/prodi/ilmu-komputer/profile', About::class)->name('main.profile');
 Route::get('/', function () {
     return redirect()->route('main.index');
 });

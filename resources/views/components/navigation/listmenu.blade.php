@@ -4,11 +4,6 @@
         <x-navigation.menu :routes="'main.akademik'" :label="'Akademik'" />
         <x-navigation.menu :routes="'main.fasilitas'" :label="'Fasilitas'" />
         <x-navigation.menu :routes="'main.berita'" :label="'Agenda & Berita'" />
-        <li>
-            <div class="group flex flex-col items-center xl:text-base text-sm">
-                <a href="" class=" group-hover:text-gray-700 text-black font-medium">Kontak</a>
-                <div class=" w-0 group-hover:w-3/4 duration-300 rounded-xl bg-red-600 h-1"></div>
-            </div>
-        </li>
+        <x-navigation.menu :routes="'main.profile'" :label="'Kontak'" />
     </ul>
 </div>
