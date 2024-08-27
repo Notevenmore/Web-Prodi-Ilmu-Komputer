@@ -9,6 +9,7 @@ use App\Livewire\DetailDosen;
 use App\Livewire\Fasilitas;
 use App\Livewire\Mahasiswa;
 use App\Livewire\Main;
+use App\Livewire\News;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,7 @@ Route::get('/prodi/ilmu-komputer', Main::class)->name('main.index');
 Route::get('/prodi/ilmu-komputer/akademik', Akademik::class)->name('main.akademik');
 Route::get('/prodi/ilmu-komputer/dosen', Dosen::class)->name('main.dosen');
 Route::get('/prodi/ilmu-komputer/berita', EventNews::class)->name('main.berita');
+Route::get('/prodi/ilmu-komputer/berita/{id}', News::class)->name('detail.berita');
 Route::get('/prodi/ilmu-komputer/fasilitas', Fasilitas::class)->name('main.fasilitas');
 Route::get('/prodi/ilmu-komputer/dosen/{id}', DetailDosen::class)->name('detail.dosen');
 Route::get('/prodi/ilmu-komputer/kegiatan', Mahasiswa::class)->name('main.mahasiswa');
